@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.endava.petclinic.owner.CreateOwnerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.252 s <<< FAILURE! - in com.endava.petclinic.owner.CreateOwnerTest
+com.endava.petclinic.owner.CreateOwnerTest.shouldFailtoCreateOwnerGivenFewDigitsTelephone  Time elapsed: 0.098 s  <<< ERROR!
+java.lang.ExceptionInInitializerError
+	at com.endava.petclinic.owner.CreateOwnerTest.shouldFailtoCreateOwnerGivenFewDigitsTelephone(CreateOwnerTest.java:43)
+Caused by: java.lang.NullPointerException: inStream parameter is null
+	at com.endava.petclinic.owner.CreateOwnerTest.shouldFailtoCreateOwnerGivenFewDigitsTelephone(CreateOwnerTest.java:43)
+
+com.endava.petclinic.owner.CreateOwnerTest.shouldFailToCreateOwnerEmptyFirstName  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.endava.petclinic.model.util.EnvReader
+	at com.endava.petclinic.owner.CreateOwnerTest.shouldFailToCreateOwnerEmptyFirstName(CreateOwnerTest.java:33)
+
+com.endava.petclinic.owner.CreateOwnerTest.shouldFailtoCreateOwnerGivenManyDigitsTelephone  Time elapsed: 0.034 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.endava.petclinic.model.util.EnvReader
+	at com.endava.petclinic.owner.CreateOwnerTest.shouldFailtoCreateOwnerGivenManyDigitsTelephone(CreateOwnerTest.java:53)
+
+com.endava.petclinic.owner.CreateOwnerTest.shouldCreateOwnerGivenValidData  Time elapsed: 0.039 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.endava.petclinic.model.util.EnvReader
+	at com.endava.petclinic.owner.CreateOwnerTest.shouldCreateOwnerGivenValidData(CreateOwnerTest.java:20)
+

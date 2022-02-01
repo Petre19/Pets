@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.endava.petclinic.owner.DeleteOwnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! - in com.endava.petclinic.owner.DeleteOwnerTest
+com.endava.petclinic.owner.DeleteOwnerTest.shouldDeleteOwnerById  Time elapsed: 0.022 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class com.endava.petclinic.model.util.EnvReader
+	at com.endava.petclinic.owner.DeleteOwnerTest.shouldDeleteOwnerById(DeleteOwnerTest.java:15)
+

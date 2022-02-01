@@ -1,0 +1,5 @@
+com\endava\petclinic\model\util\EnvReader.class
+com\endava\petclinic\model\owner\Owner.class
+com\endava\petclinic\model\owner\Pet.class
+com\endava\petclinic\model\client\OwnerClient.class
+com\endava\petclinic\model\testData\TestDataProvider.class

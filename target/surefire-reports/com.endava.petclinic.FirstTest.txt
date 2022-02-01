@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.endava.petclinic.FirstTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 3.034 s <<< FAILURE! - in com.endava.petclinic.FirstTest
+com.endava.petclinic.FirstTest.getOwnerById(Long)  Time elapsed: 0.002 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [java.lang.Long arg0] in method [public void com.endava.petclinic.FirstTest.getOwnerById(java.lang.Long)].
+
+com.endava.petclinic.FirstTest.createPet  Time elapsed: 0.138 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+	at com.endava.petclinic.FirstTest.createPet(FirstTest.java:109)
+
+com.endava.petclinic.FirstTest.deleteOwnerById  Time elapsed: 0.119 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <404>.
+
+	at com.endava.petclinic.FirstTest.deleteOwnerById(FirstTest.java:86)
+

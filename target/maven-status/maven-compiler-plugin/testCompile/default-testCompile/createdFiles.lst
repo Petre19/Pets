@@ -1,0 +1,5 @@
+com\endava\petclinic\owner\CreateOwnerTest.class
+com\endava\petclinic\owner\DeleteOwnerTest.class
+com\endava\petclinic\owner\GetOwnerListTest.class
+com\endava\petclinic\FirstTest.class
+com\endava\petclinic\TestBaseClass.class
