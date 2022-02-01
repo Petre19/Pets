@@ -1,0 +1,55 @@
+			
+package com.endava.petclinic.owner;
+
+import com.endava.petclinic.TestBaseClass;
+import com.endava.petclinic.model.client.OwnerClient;
+import com.endava.petclinic.model.client.PetClient;
+import com.endava.petclinic.model.owner.Owner;
+import com.endava.petclinic.model.owner.Pet;
+import com.endava.petclinic.model.owner.Type;
+import com.endava.petclinic.model.testData.TestDataProvider;
+import io.restassured.response.Response;
+import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
+public class CreatePetTest {
+    @Test
+    public void shouldCreatePetGivenValidData() {
+
+        PetClient petClient = new PetClient();
+        OwnerClient ownerClient=new OwnerClient();
+        TestDataProvider testDataProvider = new TestDataProvider();
+
+
+        Owner owner = testDataProvider.getOwner();
+        Response createOwnerResponse = ownerClient.createOwners(owner);
+        createOwnerResponse.prettyPeek().then().statusCode(HttpStatus.SC_CREATED);
+
+        Response responseOwner = ownerClient.createOwners(owner);
+
+        Type type=new Type(5L,"bird");
+
+        Long ownerID = createOwnerResponse.body().jsonPath().getLong("id");
+        owner.setId(ownerId);
+        Pet pet = testDataProvider.getPet();
+        //owner.setId(ownerId);
+        responseOwner.prettyPeek().then().statusCode(HttpStatus.SC_CREATED)
+                .body("id", is(notNullValue()));
+
+
+
+        pet.setType(type);
+        pet.setOwner(owner);
+        Response responsePet = petClient.createPet(pet);
+        System.out.println(pet.toString());
+
+        //THEN'
+
+        responsePet.prettyPeek().then().statusCode(HttpStatus.SC_CREATED)
+                .body("id", is(notNullValue()));
+
+    }
+}
