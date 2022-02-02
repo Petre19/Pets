@@ -29,8 +29,6 @@ public class TestDataProvider {
         Pet pet = new Pet();
         String birthDate=faker.date().birthday().toInstant().atZone(ZoneId.systemDefault())
                 .format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
-        /*Date birthday = faker.date().birthday();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");*/
         pet.setName(faker.artist().name());
         pet.setBirthDate(birthDate);
         pet.setOwner(owner);

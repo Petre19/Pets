@@ -30,5 +30,12 @@ public class PetClient {
                 .contentType(ContentType.JSON)
                 .put("api/pets/{petId}");
     }
+    public Response deletePetById(Long petId){
+        return given().filters(new AuthenticationFilter(),new LogFilter()).baseUri(getBaseUri())
+                .port(getPort())
+                .basePath(getBasePath())
+                .pathParams("petId",petId)
+                .delete("api/pets/{petId}");
+    }
 
 }

@@ -4093,3 +4093,1221 @@ Date: Tue, 01 Feb 2022 10:52:45 GMT
 }
 
 12:52:45.739 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test CreatePetTest/shouldCreatePetGivenValidData()
+09:19:09.355 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting tests on env qa2
+09:19:09.396 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting test DeletePetTest/shouldDeletePetById()
+09:19:10.975 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "firstName": "Tabetha",
+    "lastName": "Dooley",
+    "address": "Apt. 201 36182 Satterfield Circles, Kenfurt, NC 70729-1598",
+    "city": "West Izetta",
+    "telephone": "601049"
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=C7BD9C764596A2F0FB4168B29AC49B4D; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/owners/18
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:19:09 GMT
+
+{
+    "id": 18,
+    "firstName": "Tabetha",
+    "lastName": "Dooley",
+    "address": "Apt. 201 36182 Satterfield Circles, Kenfurt, NC 70729-1598",
+    "city": "West Izetta",
+    "telephone": "601049",
+    "pets": [
+        
+    ]
+}
+
+09:19:11.468 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Michelangelo",
+    "birthDate": "1968/03/02",
+    "id": null,
+    "owner": {
+        "id": 18,
+        "firstName": "Tabetha",
+        "lastName": "Dooley",
+        "address": "Apt. 201 36182 Satterfield Circles, Kenfurt, NC 70729-1598",
+        "city": "West Izetta",
+        "telephone": "601049"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=ABF7ABBCE1DBD997BC5A920D5AD95CF0; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/16
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:19:09 GMT
+
+{
+    "id": 16,
+    "name": "Michelangelo",
+    "birthDate": "1968/03/02",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 18,
+        "firstName": "Tabetha",
+        "lastName": "Dooley",
+        "address": "Apt. 201 36182 Satterfield Circles, Kenfurt, NC 70729-1598",
+        "city": "West Izetta",
+        "telephone": "601049"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:19:11.697 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	DELETE
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets/16
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=16
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=C0F070CB48CF02D608AD4CE55CC6FBDC; Path=/petclinicSecured; HttpOnly
+Date: Wed, 02 Feb 2022 07:19:09 GMT
+
+09:19:11.706 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test DeletePetTest/shouldDeletePetById()
+09:21:37.187 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting tests on env qa2
+09:21:37.225 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting test DeletePetTest/shouldDeletePetById()
+09:21:38.570 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "firstName": "Tony",
+    "lastName": "McDermott",
+    "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+    "city": "Cherriland",
+    "telephone": "167"
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=FD7B249308471D0D9FF49AE6AFDA9C9C; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/owners/19
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:21:36 GMT
+
+{
+    "id": 19,
+    "firstName": "Tony",
+    "lastName": "McDermott",
+    "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+    "city": "Cherriland",
+    "telephone": "167",
+    "pets": [
+        
+    ]
+}
+
+09:21:39.059 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Winslow Homer",
+    "birthDate": "1987/06/06",
+    "id": null,
+    "owner": {
+        "id": 19,
+        "firstName": "Tony",
+        "lastName": "McDermott",
+        "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+        "city": "Cherriland",
+        "telephone": "167"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=3A6378F8377530DEDEE772FFEB68839C; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/17
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:21:36 GMT
+
+{
+    "id": 17,
+    "name": "Winslow Homer",
+    "birthDate": "1987/06/06",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 19,
+        "firstName": "Tony",
+        "lastName": "McDermott",
+        "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+        "city": "Cherriland",
+        "telephone": "167"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:21:39.253 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Winslow Homer",
+    "birthDate": "1987/06/06",
+    "id": null,
+    "owner": {
+        "id": 19,
+        "firstName": "Tony",
+        "lastName": "McDermott",
+        "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+        "city": "Cherriland",
+        "telephone": "167"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=DB7E2A35AF069D829EAE9108CCB8B646; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/18
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:21:37 GMT
+
+{
+    "id": 18,
+    "name": "Winslow Homer",
+    "birthDate": "1987/06/06",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 19,
+        "firstName": "Tony",
+        "lastName": "McDermott",
+        "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+        "city": "Cherriland",
+        "telephone": "167"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:21:39.410 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Winslow Homer",
+    "birthDate": "1987/06/06",
+    "id": null,
+    "owner": {
+        "id": 19,
+        "firstName": "Tony",
+        "lastName": "McDermott",
+        "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+        "city": "Cherriland",
+        "telephone": "167"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=5CDBD69B4DF8D91D078365DFE1BC17C2; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/19
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:21:36 GMT
+
+{
+    "id": 19,
+    "name": "Winslow Homer",
+    "birthDate": "1987/06/06",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 19,
+        "firstName": "Tony",
+        "lastName": "McDermott",
+        "address": "Suite 113 2928 Borer Throughway, East Dennis, MI 21273-6764",
+        "city": "Cherriland",
+        "telephone": "167"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:21:39.616 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	DELETE
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets/17
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=17
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=75ACFFDC1A4E52F0218E370958A98F2C; Path=/petclinicSecured; HttpOnly
+Date: Wed, 02 Feb 2022 07:21:37 GMT
+
+09:21:39.628 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test DeletePetTest/shouldDeletePetById()
+09:23:11.591 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting tests on env qa2
+09:23:11.630 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting test DeletePetTest/shouldDeletePetById()
+09:23:12.956 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "firstName": "Allen",
+    "lastName": "Murphy",
+    "address": "Apt. 219 2621 Donn Extensions, Haydenfort, AR 40420-6695",
+    "city": "South Vondaburgh",
+    "telephone": "587831"
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=1690BF80FBF05828F9D855F2D952AD74; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/owners/20
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:23:10 GMT
+
+{
+    "id": 20,
+    "firstName": "Allen",
+    "lastName": "Murphy",
+    "address": "Apt. 219 2621 Donn Extensions, Haydenfort, AR 40420-6695",
+    "city": "South Vondaburgh",
+    "telephone": "587831",
+    "pets": [
+        
+    ]
+}
+
+09:23:13.431 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Rubens",
+    "birthDate": "1961/04/26",
+    "id": null,
+    "owner": {
+        "id": 20,
+        "firstName": "Allen",
+        "lastName": "Murphy",
+        "address": "Apt. 219 2621 Donn Extensions, Haydenfort, AR 40420-6695",
+        "city": "South Vondaburgh",
+        "telephone": "587831"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=AADF4773E3099842E7FE2530E9C43D5D; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/20
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:23:10 GMT
+
+{
+    "id": 20,
+    "name": "Rubens",
+    "birthDate": "1961/04/26",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 20,
+        "firstName": "Allen",
+        "lastName": "Murphy",
+        "address": "Apt. 219 2621 Donn Extensions, Haydenfort, AR 40420-6695",
+        "city": "South Vondaburgh",
+        "telephone": "587831"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:23:13.598 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Rubens",
+    "birthDate": "1961/04/26",
+    "id": null,
+    "owner": {
+        "id": 20,
+        "firstName": "Allen",
+        "lastName": "Murphy",
+        "address": "Apt. 219 2621 Donn Extensions, Haydenfort, AR 40420-6695",
+        "city": "South Vondaburgh",
+        "telephone": "587831"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=9905765CD497360CEE41DBCD1885C1F1; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/21
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:23:11 GMT
+
+{
+    "id": 21,
+    "name": "Rubens",
+    "birthDate": "1961/04/26",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 20,
+        "firstName": "Allen",
+        "lastName": "Murphy",
+        "address": "Apt. 219 2621 Donn Extensions, Haydenfort, AR 40420-6695",
+        "city": "South Vondaburgh",
+        "telephone": "587831"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:23:13.824 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	DELETE
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=20
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=DAF75D3DFC4222BA5EC1AB376950061C; Path=/petclinicSecured; HttpOnly
+Date: Wed, 02 Feb 2022 07:23:12 GMT
+
+09:23:13.836 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test DeletePetTest/shouldDeletePetById()
+09:25:16.165 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting tests on env qa2
+09:25:16.201 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting test DeletePetTest/shouldDeletePetById()
+09:25:17.530 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "firstName": "Terrence",
+    "lastName": "Terry",
+    "address": "47274 Willy Shores, Lake Elroytown, VT 77265-4002",
+    "city": "Lloydview",
+    "telephone": "14218"
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=F893F401EBB043368472284417A187DD; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/owners/21
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:25:15 GMT
+
+{
+    "id": 21,
+    "firstName": "Terrence",
+    "lastName": "Terry",
+    "address": "47274 Willy Shores, Lake Elroytown, VT 77265-4002",
+    "city": "Lloydview",
+    "telephone": "14218",
+    "pets": [
+        
+    ]
+}
+
+09:25:17.983 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Donatello",
+    "birthDate": "1990/09/04",
+    "id": null,
+    "owner": {
+        "id": 21,
+        "firstName": "Terrence",
+        "lastName": "Terry",
+        "address": "47274 Willy Shores, Lake Elroytown, VT 77265-4002",
+        "city": "Lloydview",
+        "telephone": "14218"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=044DC57769922A88B7A23CE44AA26200; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/22
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:25:16 GMT
+
+{
+    "id": 22,
+    "name": "Donatello",
+    "birthDate": "1990/09/04",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 21,
+        "firstName": "Terrence",
+        "lastName": "Terry",
+        "address": "47274 Willy Shores, Lake Elroytown, VT 77265-4002",
+        "city": "Lloydview",
+        "telephone": "14218"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:25:18.154 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Donatello",
+    "birthDate": "1990/09/04",
+    "id": null,
+    "owner": {
+        "id": 21,
+        "firstName": "Terrence",
+        "lastName": "Terry",
+        "address": "47274 Willy Shores, Lake Elroytown, VT 77265-4002",
+        "city": "Lloydview",
+        "telephone": "14218"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=AA109B563BFF7A40328A77EAC444D893; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/23
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:25:15 GMT
+
+{
+    "id": 23,
+    "name": "Donatello",
+    "birthDate": "1990/09/04",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 21,
+        "firstName": "Terrence",
+        "lastName": "Terry",
+        "address": "47274 Willy Shores, Lake Elroytown, VT 77265-4002",
+        "city": "Lloydview",
+        "telephone": "14218"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:25:18.366 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	DELETE
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets/22
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=22
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=F55012B3CE3977AFE3A616E505341093; Path=/petclinicSecured; HttpOnly
+Date: Wed, 02 Feb 2022 07:25:16 GMT
+
+09:25:18.376 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test DeletePetTest/shouldDeletePetById()
+09:26:06.179 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting tests on env qa2
+09:26:06.217 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting test DeletePetTest/shouldDeletePetById()
+09:26:07.508 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "firstName": "Lynna",
+    "lastName": "Howell",
+    "address": "Suite 610 995 Mirian Throughway, Morarborough, KY 98273-9933",
+    "city": "Julietaland",
+    "telephone": "312"
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=9FC1293780657CFEB8FA8591A93AE12D; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/owners/22
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:26:05 GMT
+
+{
+    "id": 22,
+    "firstName": "Lynna",
+    "lastName": "Howell",
+    "address": "Suite 610 995 Mirian Throughway, Morarborough, KY 98273-9933",
+    "city": "Julietaland",
+    "telephone": "312",
+    "pets": [
+        
+    ]
+}
+
+09:26:07.961 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Rubens",
+    "birthDate": "1985/03/23",
+    "id": null,
+    "owner": {
+        "id": 22,
+        "firstName": "Lynna",
+        "lastName": "Howell",
+        "address": "Suite 610 995 Mirian Throughway, Morarborough, KY 98273-9933",
+        "city": "Julietaland",
+        "telephone": "312"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=6E7B951F858AC5C27F75DF47482C78C0; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/24
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:26:06 GMT
+
+{
+    "id": 24,
+    "name": "Rubens",
+    "birthDate": "1985/03/23",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 22,
+        "firstName": "Lynna",
+        "lastName": "Howell",
+        "address": "Suite 610 995 Mirian Throughway, Morarborough, KY 98273-9933",
+        "city": "Julietaland",
+        "telephone": "312"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:26:08.140 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Rubens",
+    "birthDate": "1985/03/23",
+    "id": null,
+    "owner": {
+        "id": 22,
+        "firstName": "Lynna",
+        "lastName": "Howell",
+        "address": "Suite 610 995 Mirian Throughway, Morarborough, KY 98273-9933",
+        "city": "Julietaland",
+        "telephone": "312"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=5FD7DA9E64D4D9B0531DB07439881D4D; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/25
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:26:05 GMT
+
+{
+    "id": 25,
+    "name": "Rubens",
+    "birthDate": "1985/03/23",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 22,
+        "firstName": "Lynna",
+        "lastName": "Howell",
+        "address": "Suite 610 995 Mirian Throughway, Morarborough, KY 98273-9933",
+        "city": "Julietaland",
+        "telephone": "312"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:26:08.341 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	DELETE
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=24
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=1E314F066E7A7EDE28D60871EA4D8EB7; Path=/petclinicSecured; HttpOnly
+Date: Wed, 02 Feb 2022 07:26:06 GMT
+
+09:26:08.342 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test DeletePetTest/shouldDeletePetById()
+09:30:35.796 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting tests on env qa2
+09:30:35.834 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Starting test DeletePetTest/shouldDeletePetById()
+09:30:37.468 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/owners
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": null,
+    "firstName": "Contessa",
+    "lastName": "McCullough",
+    "address": "Apt. 997 84186 O'Connell Rest, Lake Charline, TN 71218",
+    "city": "Port Isaura",
+    "telephone": "924149263"
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=586F8EBF0E81B69A34DC68838A20A4C5; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/owners/25
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:30:36 GMT
+
+{
+    "id": 25,
+    "firstName": "Contessa",
+    "lastName": "McCullough",
+    "address": "Apt. 997 84186 O'Connell Rest, Lake Charline, TN 71218",
+    "city": "Port Isaura",
+    "telephone": "924149263",
+    "pets": [
+        
+    ]
+}
+
+09:30:38.002 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Degas",
+    "birthDate": "1963/09/03",
+    "id": null,
+    "owner": {
+        "id": 25,
+        "firstName": "Contessa",
+        "lastName": "McCullough",
+        "address": "Apt. 997 84186 O'Connell Rest, Lake Charline, TN 71218",
+        "city": "Port Isaura",
+        "telephone": "924149263"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=C52121C1EE6ADFF2F3C568B4C170CE99; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/28
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:30:37 GMT
+
+{
+    "id": 28,
+    "name": "Degas",
+    "birthDate": "1963/09/03",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 25,
+        "firstName": "Contessa",
+        "lastName": "McCullough",
+        "address": "Apt. 997 84186 O'Connell Rest, Lake Charline, TN 71218",
+        "city": "Port Isaura",
+        "telephone": "924149263"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:30:38.175 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	POST
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Degas",
+    "birthDate": "1963/09/03",
+    "id": null,
+    "owner": {
+        "id": 25,
+        "firstName": "Contessa",
+        "lastName": "McCullough",
+        "address": "Apt. 997 84186 O'Connell Rest, Lake Charline, TN 71218",
+        "city": "Port Isaura",
+        "telephone": "924149263"
+    },
+    "type": {
+        "id": 1,
+        "name": null
+    }
+}
+
+HTTP/1.1 201 Created
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=674517E196231932D3337D82FE7AE72D; Path=/petclinicSecured; HttpOnly
+Location: http://bhdtest.endava.com:8080/petclinicSecured/api/pets/29
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 02 Feb 2022 07:30:36 GMT
+
+{
+    "id": 29,
+    "name": "Degas",
+    "birthDate": "1963/09/03",
+    "type": {
+        "id": 1,
+        "name": null
+    },
+    "owner": {
+        "id": 25,
+        "firstName": "Contessa",
+        "lastName": "McCullough",
+        "address": "Apt. 997 84186 O'Connell Rest, Lake Charline, TN 71218",
+        "city": "Port Isaura",
+        "telephone": "924149263"
+    },
+    "visits": [
+        
+    ]
+}
+
+09:30:38.395 [main] INFO  com.endava.petclinic.model.filters.LogFilter - Request method:	DELETE
+Request URI:	http://bhdtest.endava.com:8080/petclinicSecured/api/pets/28
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	petId=28
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 204 No Content
+Server: Apache-Coyote/1.1
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=D55DA53B28C710923E73B0290EE795B7; Path=/petclinicSecured; HttpOnly
+Date: Wed, 02 Feb 2022 07:30:37 GMT
+
+09:30:38.396 [main] INFO  com.endava.petclinic.model.extension.TestReporterExtension - Finishing test DeletePetTest/shouldDeletePetById()
